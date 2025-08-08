@@ -13,20 +13,20 @@ export default function AboutPage() {
           I wrote my first lines of code at the age of 13, driven by the desire to solve small daily problems with technology. Since then, coding became more than just a skill, it became my passion and career.
         </p>
         <p>
-          Over the past years, I've worked professionally as a fullstack developer, mostly with{" "}
+          Over the past years, I&apos;ve worked professionally as a fullstack developer, mostly with{" "}
           <strong>.NET</strong>, <strong>Java</strong>, <strong>React</strong>, and <strong>Angular</strong>. I love building scalable systems and crafting intuitive user interfaces.
         </p>
         <p>
-          I'm always exploring ways to grow as a developer, whether through side projects, open source, or deep dives into performance and architecture.
+          I&apos;m always exploring ways to grow as a developer, whether through side projects, open source, or deep dives into performance and architecture.
         </p>
         <p>
-          I'm also a huge fan of automation and productivity. I've built internal tools to speed up workflows and enjoy experimenting with new technologies to improve developer experience.
+          I&apos;m also a huge fan of automation and productivity. I&apos;ve built internal tools to speed up workflows and enjoy experimenting with new technologies to improve developer experience.
         </p>
         <p>
           Outside of work, you’ll probably find me listening to music, playing games, or diving into tech communities, sharing what I learn and learning from others.
         </p>
         <p>
-          If you'd like to connect, feel free to reach out on{" "}
+          If you&apos;d like to connect, feel free to reach out on{" "}
           email at{" "}
           <a href="mailto:kore@null.net">kore@null.net</a>.
         </p>
