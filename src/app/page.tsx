@@ -1,10 +1,12 @@
+"use client";
+
 import {
   SiGithub,
   SiLinkedin
 } from "@icons-pack/react-simple-icons";
 import { ArrowUpRight, Download, Send } from "lucide-react";
 import Link from "next/link";
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 
 const XLogo = () => {
   return (
@@ -94,6 +96,21 @@ const ExternalLink = (link: Link) => {
 };
 
 export default function HomePage() {
+  const [showLanguageDialog, setShowLanguageDialog] = useState(false);
+
+  const handleCVDownload = (language: 'en' | 'pt') => {
+    const fileName = language === 'en' ? 'gabriel-anjos-cv-en.pdf' : 'gabriel-anjos-cv-pt.pdf';
+    const downloadName = language === 'en' ? 'Gabriel-Anjos-CV-EN.pdf' : 'Gabriel-Anjos-CV-PT.pdf';
+    
+    const link = document.createElement('a');
+    link.href = `/${fileName}`;
+    link.download = downloadName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    setShowLanguageDialog(false);
+  };
+
   return (
     <div className="flex flex-col gap-6">
       <p className="text-sm">
@@ -125,15 +142,38 @@ export default function HomePage() {
             Online
           </span>
         </div>
-        <div className="flex flex-col gap-2">
-          <a
-            href="/gabriel-anjos-cv.pdf"
-            download="Gabriel-Anjos-cv.pdf"
+        <div className="flex flex-col gap-2 relative">
+          <button
+            onClick={() => setShowLanguageDialog(true)}
             className="flex flex-row items-center justify-center gap-3 rounded bg-sky-300 p-4 text-sky-800 ring-1 ring-sky-500 transition-all sm:hover:bg-sky-400 dark:bg-inherit dark:text-sky-500 dark:ring-sky-500 sm:sm:dark:hover:bg-zinc-800"
           >
             <span className="text-nowrap">Download my CV</span>
             <Download strokeWidth={1.4} className="size-5 max-sm:hidden" />
-          </a>
+          </button>
+          
+          {showLanguageDialog && (
+            <div className="absolute top-full mt-2 z-10 w-full bg-white dark:bg-zinc-900 border border-zinc-400 dark:border-zinc-500 rounded shadow-lg">
+              <button
+                onClick={() => handleCVDownload('en')}
+                className="w-full px-4 py-3 text-left hover:bg-zinc-100 dark:hover:bg-zinc-800 border-b border-zinc-200 dark:border-zinc-700"
+              >
+                English
+              </button>
+              <button
+                onClick={() => handleCVDownload('pt')}
+                className="w-full px-4 py-3 text-left hover:bg-zinc-100 dark:hover:bg-zinc-800"
+              >
+                Português
+              </button>
+            </div>
+          )}
+          
+          {showLanguageDialog && (
+            <div 
+              className="fixed inset-0 z-5"
+              onClick={() => setShowLanguageDialog(false)}
+            />
+          )}
         </div>
       </div>
     </div>
