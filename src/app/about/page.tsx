@@ -6,83 +6,37 @@ export default function AboutPage() {
       </h1>
       <article>
         <p>
-          I was born in São Paulo and moved to{" "}
-          <a href="https://en.wikipedia.org/wiki/Florian%C3%B3polis">
-            Florianópolis
-          </a>{" "}
-          as a 10 year old kid. I fell in love with the nature, sport and music
-          culture of the Magical Island.
+          I was born and raised in{" "}
+          <a href="https://en.wikipedia.org/wiki/Rio_de_Janeiro" target="_blank">Rio de Janeiro</a>, Brazil. From an early age, I was curious about how things worked, and I found in programming the perfect tool to bring ideas to life.
         </p>
         <p>
-          In the next decade, I{" "}
-          <a href="https://open.spotify.com/artist/4ymHKBTThfeOL114lwCWPQ?si=c30897c35e404259">
-            became a singer-songwriter
-          </a>
-          , got a Karate blue belt, won back-to-back Carnavals with a samba
-          school and wasted thousands of hours playing League of Legends.
+          I wrote my first lines of code at the age of 13, driven by the desire to solve small daily problems with technology. Since then, coding became more than just a skill, it became my passion and career.
         </p>
         <p>
-          Then I studied Economics at{" "}
-          <a href="https://en.wikipedia.org/wiki/Federal_University_of_Santa_Catarina">
-            Federal University of Santa Catarina
-          </a>
-          , mostly for my love for History and Math. I learned a lot of
-          Politics, Statistics and Macroeconomics.
+          Over the past years, I've worked professionally as a fullstack developer, mostly with{" "}
+          <strong>.NET</strong>, <strong>Java</strong>, <strong>React</strong>, and <strong>Angular</strong>. I love building scalable systems and crafting intuitive user interfaces.
         </p>
         <p>
-          But I&apos;d spent too long studying models that weren&apos;t
-          applicable in real-life. I felt disconnected from my studies which led
-          to me dropping out after 2 years.
+          I'm always exploring ways to grow as a developer, whether through side projects, open source, or deep dives into performance and architecture.
         </p>
         <p>
-          Then came my first contact with programming: as a Data Analyst at a
-          Tech startup. We used Microsoft Excel and Power BI to generate our
-          reports.
+          I'm also a huge fan of automation and productivity. I've built internal tools to speed up workflows and enjoy experimenting with new technologies to improve developer experience.
         </p>
         <p>
-          With millions of data entries, it wasn&apos;t long until my Dell
-          notebook became unusably slow. This led me to learn Python and Pandas
-          to better deal with datasets, as well as Selenium and pyautogui.
+          Outside of work, you’ll probably find me listening to music, playing games, or diving into tech communities, sharing what I learn and learning from others.
         </p>
         <p>
-          I&apos;ve always been obsessed with user interfaces. My friends
-          couldn&apos;t bear me pointing out broken buttons and ugly websites
-          all the time.
+          If you'd like to connect, feel free to reach out on{" "}
+          email at{" "}
+          <a href="mailto:kore@null.net">kore@null.net</a>.
         </p>
         <p>
-          When I found out what HTML was, I did a deep dive into the Frontend. I
-          completed FreeCodeCamp&apos;s{" "}
-          <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">
-            Responsive Web Design
-          </a>{" "}
-          and swiftly progressed to Javascript and React soon after.
+          Let’s build something great.
         </p>
-        <p>
-          I became more active within the Brazilian Dev community, sharing
-          quirky UI bugs and building my projects in public such as{" "}
-          <a href="https://phived.com">phived</a> and{" "}
-          <a href="https://css2wind.com">css2wind</a>. I collaborated with
-          hundreds of developers and contributed a lot to Open Source.
-        </p>
-        <p>
-          In 2024, I traveled to Torino, Italy to visit my dad. My life flipped
-          upside down and I ended up living in Málaga for a while. After I{" "}
-          <a href="/articles/how-not-to-get-a-job-in-spain">
-            failed to get a job
-          </a>
-          , I moved to the UK and landed a job in London, where I currently
-          live.
-        </p>
-        <p>
-          If you want to get in touch, send me a DM on{" "}
-          <a href="https://x.com/lukeberrypi">X</a> or an email{" "}
-          <a href="mailto:lukeberrypi@gmail.com">lukeberrypi@gmail.com</a>.
-        </p>
-        <p>Smile, you&apos;re alive :)</p>
         <p>
           Best,
           <br />
-          Luke
+          Gabriel
         </p>
       </article>
     </>

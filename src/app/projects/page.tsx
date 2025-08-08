@@ -17,7 +17,7 @@ const projects: Project[] = [
     description:
       "Open‑source, self‑hosted cloud storage leveraging Telegram’s infrastructure for free unlimited file hosting, with .NET 8 backend, PostgreSQL auth, full REST API, Docker support and JWT security.",
     url: "https://github.com/korefs/Curator",
-    imageUrl: "/projects/curator.png",
+    imageUrl: "/projects/510706.jpeg",
     githubUrl: "https://github.com/korefs/Curator",
     technologies: (
       <div className="flex items-center gap-x-3">
@@ -44,7 +44,7 @@ const projects: Project[] = [
     description:
       "Lightweight and fast terminal tool for instant file or folder sharing over LAN or web. Provides an HTTP download link, QR code, P2P transfer, and optional uploads to 0x0.st. Supports cross-platform use (Windows, macOS, Linux).",
     url: "https://github.com/korefs/wdrop",
-    imageUrl: "/projects/wdrop.png",
+    imageUrl: "/projects/510706.jpeg",
     githubUrl: "https://github.com/korefs/wdrop",
     technologies: (
       <div className="flex items-center gap-x-3">
@@ -71,7 +71,7 @@ const projects: Project[] = [
     description:
       "Simple and powerful personal finance manager—a modern web application to track income, expenses, recurring transactions, customizable categories, with interactive charts and dark/light theme support.",
     url: "https://github.com/korefs/Flux",
-    imageUrl: "/projects/flux.png",
+    imageUrl: "/projects/510706.jpeg",
     githubUrl: "https://github.com/korefs/Flux",
     technologies: (
       <div className="flex items-center gap-x-3">
@@ -98,7 +98,7 @@ const projects: Project[] = [
     description:
       "Discord bot built with .NET Core using Discord.Net v3 and integrated with a LavaLink server for music playback.",
     url: "https://github.com/eCine-boys/Giyu",
-    imageUrl: "/projects/giyu.png",
+    imageUrl: "/projects/510706.jpeg",
     githubUrl: "https://github.com/eCine-boys/Giyu",
     technologies: (
       <div className="flex items-center gap-x-3">

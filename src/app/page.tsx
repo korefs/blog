@@ -106,14 +106,14 @@ export default function HomePage() {
       <div className="flex justify-center gap-6 max-sm:flex-col-reverse sm:justify-between">
         <div className="flex flex-col justify-center gap-4 max-sm:items-center">
           <div className="group -m-8 flex select-all items-center gap-3 p-8 transition-all">
-            kore.dv7@gmail.com
+            kore@null.net
             <div className="inline-flex items-center gap-3">
               {/* TODO add copy email
                 <button className="text-zinc-800 sm:group-hover:inline-flex dark:text-zinc-200">
                 <Copy className="size-4" />
               </button> */}
               <a
-                href="mailto:kore.dv7@gmail.com"
+                href="mailto:kore@null.net"
                 className="text-zinc-800 dark:text-zinc-200"
               >
                 <Send strokeWidth={1.4} className="size-4" />
