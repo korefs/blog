@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import { Karla } from "next/font/google";
-import Link from "next/link";
-import "./globals.css";
-import { ScrollToTop } from "../components/scroll-to-top";
-import Script from "next/script";
 import dynamic from "next/dynamic";
+import { Karla } from "next/font/google";
+import Script from "next/script";
+import { ScrollToTop } from "../components/scroll-to-top";
+import "./globals.css";
 // import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
-  title: "Luke Berry",
-  description: "Luke Berry's personal website",
+  title: "Gabriel A.",
+  description: "Gabriel A. personal website",
 };
 
 const karla = Karla({
@@ -43,25 +42,25 @@ export default function RootLayout({
           <div className="flex items-center gap-4">
             <a
               className="decoration-zinc-500 underline-offset-4 transition-all sm:hover:underline dark:decoration-zinc-400"
-              href="https://github.com/LukeberryPi/blog"
+              href="https://github.com/korefs/blog"
               target="_blank"
             >
               Code
             </a>
-            <Link
+            {/* <Link
               className="decoration-zinc-500 underline-offset-4 transition-all sm:hover:underline dark:decoration-zinc-400"
               target="_blank"
               href="/rss.xml"
             >
               RSS Feed
-            </Link>
-            <a
+            </Link> */}
+            {/* <a
               className="decoration-zinc-500 underline-offset-4 transition-all sm:hover:underline dark:decoration-zinc-400"
-              href="https://x.com/LukeberryPi"
+              href="https://x.com/okorekk"
               target="_blank"
             >
-              @LukeberryPi
-            </a>
+              @okorekk
+            </a> */}
           </div>
           <blockquote className="text-zinc-800 dark:text-zinc-300">
             Smile, you&apos;re alive :)
