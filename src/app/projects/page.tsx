@@ -163,7 +163,7 @@ export default function ProjectsPage() {
   return (
     <>
       <h1 className="mb-16 mt-4 text-center text-5xl max-sm:text-4xl">
-        Projects
+        Recent Projects
       </h1>
       <div className="space-y-20">
         {projects.map((project) => (
