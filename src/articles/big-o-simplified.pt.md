@@ -1,7 +1,7 @@
 ---
 title: "Big O Simplificado"
 date: "2025-08-08"
-tags: ["ai", "career", "software-development"]
+tags: ["technology", "big-o"]
 location: "Rio de Janeiro, Brasil"
 ---
 
