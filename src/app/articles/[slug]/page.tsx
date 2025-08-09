@@ -1,5 +1,6 @@
 import { getArticleData } from "@/src/lib/articles";
 import { Article } from "../../../components/article";
+import { LanguageToggle } from "../../../components/LanguageToggle";
 
 function Tag({ tag }: { tag: string }) {
   return (
@@ -11,12 +12,16 @@ function Tag({ tag }: { tag: string }) {
 
 export default async function ArticlePage({
   params,
+  searchParams,
 }: {
   params: { slug: string };
+  searchParams: { lang?: string };
 }) {
   let articleData;
+  const lang = (searchParams.lang === 'pt' ? 'pt' : 'en') as 'en' | 'pt';
+  
   try {
-    articleData = await getArticleData(params.slug);
+    articleData = await getArticleData(params.slug, lang);
   } catch (error) {
     return (
       <div className="flex flex-col items-center justify-center gap-6 py-16">
@@ -50,6 +55,11 @@ export default async function ArticlePage({
           </div>
         </div>
       </div>
+      <LanguageToggle 
+        currentLang={articleData.currentLang}
+        hasPtVersion={articleData.hasPtVersion}
+        isUsingFallback={articleData.isUsingFallback}
+      />
       <Article html={articleData.contentHtml} />
     </>
   );

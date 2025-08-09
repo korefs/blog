@@ -43,19 +43,19 @@ If you stop thinking through problems yourself, your problem-solving muscles get
 ## How to Avoid Becoming an “AI-Dependent” Dev
 
 1. **Always Understand the Output**  
-   Never paste AI-generated code without reading and understanding it. Ask *why* it works.
+  * Never paste AI-generated code without reading and understanding it. Ask *why* it works.
 
 2. **Use AI for Guidance, Not as a Crutch**  
-   Treat AI like a senior developer giving you hints, not like a magic code vending machine.
+  * Treat AI like a senior developer giving you hints, not like a magic code vending machine.
 
 3. **Refactor and Improve**  
-   Even if AI gives you a decent solution, see if you can make it cleaner, faster, or more readable.
+  * Even if AI gives you a decent solution, see if you can make it cleaner, faster, or more readable.
 
 4. **Keep Practicing Without AI**  
-   Schedule “AI-free coding sessions” where you solve problems on your own.
+  * Schedule “AI-free coding sessions” where you solve problems on your own.
 
 5. **Learn the Fundamentals**  
-   AI can help with syntax and patterns, but only you can build your deep understanding of algorithms, data structures, and system design.
+  * AI can help with syntax and patterns, but only you can build your deep understanding of algorithms, data structures, and system design.
 
 ---
 

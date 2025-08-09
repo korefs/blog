@@ -37,7 +37,10 @@ export function getAllTags() {
 export function getArticles() {
   const files = fs.readdirSync(ARTICLES_DIR);
 
-  const allArticlesData = files.map((file) => {
+  // Filter out Portuguese versions (.pt.md) to avoid duplicates in listing
+  const originalFiles = files.filter(file => file.endsWith('.md') && !file.endsWith('.pt.md'));
+
+  const allArticlesData = originalFiles.map((file) => {
     const id = file.replace(/\.md$/, "");
     const fullPath = path.join(ARTICLES_DIR, file);
     const fileContents = fs.readFileSync(fullPath, "utf-8");
@@ -62,14 +65,25 @@ export function getArticles() {
   });
 }
 
-export async function getArticleData(id: string) {
-  const fullPath = path.join(ARTICLES_DIR, `${id}.md`);
-  const fileContents = fs.readFileSync(fullPath, "utf-8");
+export async function getArticleData(id: string, lang: 'en' | 'pt' = 'en') {
+  const fileName = lang === 'pt' ? `${id}.pt.md` : `${id}.md`;
+  const fullPath = path.join(ARTICLES_DIR, fileName);
+  
+  // Check if translated version exists, fallback to original if not
+  let actualPath = fullPath;
+  if (lang === 'pt' && !fs.existsSync(fullPath)) {
+    actualPath = path.join(ARTICLES_DIR, `${id}.md`);
+  }
+  
+  const fileContents = fs.readFileSync(actualPath, "utf-8");
   const matterResult = matter(fileContents);
   const processedContent = await remark()
     .use(html)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
+
+  // Check if Portuguese version exists for the language toggle
+  const hasPtVersion = fs.existsSync(path.join(ARTICLES_DIR, `${id}.pt.md`));
 
   return {
     id,
@@ -78,5 +92,8 @@ export async function getArticleData(id: string) {
     tags: matterResult.data.tags || [],
     location: matterResult.data.location || "",
     date: moment(matterResult.data.date, "YYYY-MM-DD").format("MMMM  Do, YYYY"),
+    currentLang: lang,
+    hasPtVersion,
+    isUsingFallback: lang === 'pt' && !fs.existsSync(fullPath)
   };
 }
